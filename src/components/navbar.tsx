@@ -48,9 +48,11 @@ function Navbar() {
       <Button variant={'outline'} size={"icon"} className='rounded-full bg-[#FBEBB5]'>
             <Heart className='bg-[#FBEBB5]'/>
           </Button>
+          <Link href="/viewcart">
           <Button variant={'outline'} size={"icon"} className='rounded-full bg-[#FBEBB5]'>
             <ShoppingCart className='bg-[#FBEBB5]'/>
             </Button>
+            </Link>
       </div>
       <div>
         <Menu onClick={toggleMenu}/>
