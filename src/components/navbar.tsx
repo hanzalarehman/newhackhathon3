@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Heart, Menu, Search, ShoppingCart } from 'lucide-react'
 import { Button } from './ui/button'
+import CartIcon from './CartIcon'
 function Navbar() {
   function toggleMenu(){
     const mobileMenuContent = document.getElementById('mobileMenuContent') as HTMLElement;
@@ -34,7 +35,7 @@ function Navbar() {
             <Heart className='bg-[#FBEBB5]'/>
           </Button>
           <Button variant={'outline'} size={"icon"} className='rounded-full bg-[#FBEBB5]'>
-           <Link href="/viewcart"> <ShoppingCart className='bg-[#FBEBB5]'/> </Link>
+           <Link href="/viewcart"> <CartIcon/> </Link>
             </Button>
         </div>
     </div>
@@ -50,7 +51,7 @@ function Navbar() {
           </Button>
           <Link href="/viewcart">
           <Button variant={'outline'} size={"icon"} className='rounded-full bg-[#FBEBB5]'>
-            <ShoppingCart className='bg-[#FBEBB5]'/>
+    <CartIcon/>
             </Button>
             </Link>
       </div>
